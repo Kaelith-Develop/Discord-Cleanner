@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: discord-cleaner
+    env: python
+    buildCommand: ""
+    startCommand: "python EliminarMensajes.py"
+    plan: free
