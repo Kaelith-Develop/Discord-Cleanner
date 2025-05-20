@@ -5,7 +5,6 @@ import time
 app = Flask(__name__)
 cancel_requested = False
 
-# HTML template as a string with improved styling, organization, and error messages
 html_template = """
 <!DOCTYPE html>
 <html lang="es">
@@ -222,7 +221,6 @@ html_template = """
 
 @app.route('/')
 def index():
-    """Renderiza la página principal con el formulario para eliminar mensajes."""
     return render_template_string(html_template)
 
 
